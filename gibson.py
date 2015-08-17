@@ -30,4 +30,4 @@ vol = [(vol_total/i)/denominator for i in pmol]
 fin = [ pmol[i] * vol[i] / 5 for i in range(l)]
 
 for i in range(l):
-    print ('{2}:\t{0:.2f} ul\t({1:.2f} pmol)'.format(vol[i], fin[i], names[i]))
+    print ('{2}:\t{0:.2f} ul\t({1:.5f} pmol)'.format(vol[i], fin[i], names[i]))
