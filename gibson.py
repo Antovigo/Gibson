@@ -2,9 +2,9 @@
 import sys
 
 if len(sys.argv) > 1:
-    vol_total = sys.argv[1]
+    vol_total = float(sys.argv[1])
 else:
-    vol_total = 10
+    vol_total = 5
 
 ng = []
 bp = []
