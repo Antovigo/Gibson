@@ -1,6 +1,11 @@
-#!/usr/bin/python2
+#!/usr/bin/python2.7
+import sys
 
-vol_total = 5
+if len(sys.argv) > 1:
+    vol_total = sys.argv[1]
+else:
+    vol_total = 10
+
 ng = []
 bp = []
 names = []
@@ -31,3 +36,4 @@ fin = [ pmol[i] * vol[i] / 5 for i in range(l)]
 
 for i in range(l):
     print ('{2}:\t{0:.2f} ul\t({1:.5f} pmol)'.format(vol[i], fin[i], names[i]))
+
